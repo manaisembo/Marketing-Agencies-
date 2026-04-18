@@ -1,9 +1,12 @@
-function scrollToContact() {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+const videos = document.querySelectorAll(".bg-video");
+let current = 0;
+
+function changeVideo() {
+  videos[current].classList.remove("active");
+
+  current = (current + 1) % videos.length;
+
+  videos[current].classList.add("active");
 }
 
-function sendMessage(event) {
-  event.preventDefault();
-  document.getElementById("successMsg").innerText =
-    "Request sent successfully. We will contact you soon!";
-}
+setInterval(changeVideo, 5000);
