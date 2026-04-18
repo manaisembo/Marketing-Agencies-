@@ -20,7 +20,6 @@
   text-decoration: none;
 }
 
-/* HERO VIDEO */
 .hero {
   height: 100vh;
   position: relative;
@@ -31,42 +30,44 @@
   color: white;
 }
 
+/* VIDEO WRAPPER */
+.video-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* EACH VIDEO */
 .bg-video {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
 }
 
+/* ACTIVE VIDEO */
+.bg-video.active {
+  opacity: 1;
+}
+
+/* OVERLAY */
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.6);
-  z-index: 1;
+  z-index: 2;
 }
 
+/* CONTENT */
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
   max-width: 800px;
 }
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.hero-content button {
-  padding: 12px 20px;
-  background: #00c3ff;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
 /* SERVICES */
 .services {
   padding: 60px 20px;
