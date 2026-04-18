@@ -4,175 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeadGen Agency</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f1a;
-      color: white;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* NAVBAR */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background: #111;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .navbar a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    .navbar a:hover {
-      color: #00c3ff;
-    }
-
-    .navbar button {
-      padding: 8px 15px;
-      background: #00c3ff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    /* HERO */
-    .hero {
-      height: 80vh;
-      background: url("https://images.unsplash.com/photo-1556761175-b413da4baf72") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
-
-    .hero-content {
-      position: relative;
-      text-align: center;
-    }
-
-    .hero-content h1 {
-      font-size: 40px;
-    }
-
-    .hero-content p {
-      max-width: 600px;
-      margin: auto;
-      color: #ddd;
-    }
-
-    .hero-content button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #00c3ff;
-      border: none;
-      cursor: pointer;
-    }
-
-    /* SERVICES */
-    .services {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .grid {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: #141a2a;
-      padding: 20px;
-      width: 220px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      background: #1c2540;
-    }
-
-    /* CONTACT */
-    .contact {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    input, textarea {
-      width: 300px;
-      padding: 10px;
-      margin: 8px;
-    }
-
-    button.submit {
-      padding: 10px 20px;
-      background: #00c3ff;
-      border: none;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
   <h2>LeadGen</h2>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
   </nav>
-
   <button onclick="scrollToContact()">Get Leads</button>
 </header>
 
-<!-- HERO -->
+<!-- HERO (SLIDER) -->
 <section class="hero">
+  <div class="overlay"></div>
+
   <div class="hero-content">
-    <h1>Connect with Decision Makers</h1>
-    <p>We help businesses grow with verified B2B leads and email marketing systems.</p>
-    <button onclick="scrollToContact()">Start Now</button>
+    <h1>Global B2B Lead Generation That Drives Revenue</h1>
+
+    <p>
+      We provide verified B2B contacts worldwide including CEOs, founders,
+      directors, and decision makers. Scale your business with global outreach.
+    </p>
+
+    <button onclick="scrollToContact()">Get Global Leads</button>
   </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <p>✔ Verified Global Data | ✔ Decision Makers | ✔ High Conversion Leads | ✔ Fast Delivery</p>
 </section>
 
 <!-- SERVICES -->
 <section class="services">
-  <h2>What We Offer</h2>
-
+  <h2>Our Services</h2>
   <div class="grid">
+    <div class="card">Global B2B Leads</div>
     <div class="card">Email Marketing</div>
-    <div class="card">B2B Leads</div>
     <div class="card">SEO Growth</div>
-    <div class="card">Decision Makers</div>
+    <div class="card highlight">CEO Contact Database</div>
   </div>
 </section>
 
@@ -180,23 +54,20 @@
 <section id="contact" class="contact">
   <h2>Get Leads Now</h2>
 
-  <form>
-    <input type="text" placeholder="Name" required><br>
-    <input type="email" placeholder="Email" required><br>
-    <textarea placeholder="Requirement"></textarea><br>
-    <button class="submit" type="submit">Send</button>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Requirement" required></textarea>
+    <button type="submit">Send Request</button>
   </form>
+
+  <p id="successMsg"></p>
 </section>
 
 <footer>
   <p>© 2026 LeadGen Agency</p>
 </footer>
 
-<script>
-function scrollToContact() {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
