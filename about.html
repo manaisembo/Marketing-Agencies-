@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - LeadGen</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0b0f1a;
+      color: white;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #111;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .navbar button {
+      background: #00c3ff;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      height: 60vh;
+      background: url("https://images.unsplash.com/photo-1556761175-b413da4baf72") center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      position: relative;
+      font-size: 40px;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .box {
+      background: #141a2a;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .founder {
+      background: #141a2a;
+      padding: 20px;
+      width: 320px;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>LeadGen</h2>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <button onclick="location.href='index.html#contact'">Get Leads</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>About LeadGen Agency</h1>
+</section>
+
+<!-- CONTENT -->
+<section class="content">
+
+  <div class="box">
+    <h3>Our Mission</h3>
+    <p>Helping businesses grow with verified B2B leads.</p>
+  </div>
+
+  <div class="box">
+    <h3>What We Do</h3>
+    <p>Email marketing, lead generation, SEO growth.</p>
+  </div>
+
+  <!-- FOUNDER -->
+  <div class="founder">
+    <h2>Founder & CEO</h2>
+    <p><strong>Manaisembou</strong></p>
+    <p>📞 8787683007</p>
+    <p>📧 manaisembo@gmail.com</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 LeadGen Agency</p>
+</footer>
+
+</body>
+</html>
