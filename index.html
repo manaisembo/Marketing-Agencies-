@@ -17,8 +17,13 @@
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- HERO WITH VIDEO BACKGROUND -->
 <section class="hero">
+
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="https://cdn.coverr.co/videos/coverr-a-team-working-in-a-modern-office-1579/1080p.mp4" type="video/mp4">
+  </video>
+
   <div class="overlay"></div>
 
   <div class="hero-content">
@@ -31,6 +36,7 @@
 
     <button onclick="scrollToContact()">Get Global Leads</button>
   </div>
+
 </section>
 
 <!-- SERVICES -->
@@ -55,7 +61,13 @@
     <textarea placeholder="Your Requirement" required></textarea>
     <button type="submit">Send Request</button>
   </form>
+
+  <p id="successMsg"></p>
 </section>
+
+<footer>
+  <p>© 2026 LeadGen Agency</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
