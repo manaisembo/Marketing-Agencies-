@@ -22,7 +22,7 @@
 
 /* HERO VIDEO */
 .hero {
-  height: 80vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -33,16 +33,16 @@
 
 .bg-video {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   z-index: 0;
 }
 
 .overlay {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.6);
   z-index: 1;
 }
@@ -51,7 +51,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .hero-content h1 {
