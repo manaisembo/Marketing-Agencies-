@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadGen Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2>LeadGen</h2>
+  <button onclick="scrollToContact()">Get Leads</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Connect with Decision Makers & Grow Faster</h1>
+      <p>
+        I help businesses reach CEOs, founders, and top executives through
+        verified B2B data and powerful email marketing strategies.
+      </p>
+      <button onclick="scrollToContact()">Start Now</button>
+      <p class="founder">— Founder & B2B Lead Specialist</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <p>✔ Verified Data | ✔ Targeted Leads | ✔ High Conversion | ✔ Fast Delivery</p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>What We Offer</h2>
+  <div class="grid">
+    <div class="card">Email Marketing</div>
+    <div class="card">B2B Lead Generation</div>
+    <div class="card">SEO Optimization</div>
+    <div class="card highlight">Decision Maker Contacts</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>Who We Are</h2>
+  <p>
+    We are a results-driven agency helping businesses grow using verified
+    contact data and high-performing outreach campaigns.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Get Leads Now</h2>
+
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Requirement" required></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+
+  <p id="successMsg"></p>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">Chat</a>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 LeadGen Agency</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
