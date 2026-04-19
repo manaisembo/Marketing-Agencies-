@@ -12,6 +12,8 @@
   padding: 15px 30px;
   background: #111;
   color: white;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar nav a {
@@ -20,6 +22,7 @@
   text-decoration: none;
 }
 
+/* HERO SECTION */
 .hero {
   height: 100vh;
   position: relative;
@@ -28,16 +31,19 @@
   align-items: center;
   justify-content: center;
   color: white;
+  background: black; /* fallback if video fails */
 }
 
 /* VIDEO WRAPPER */
 .video-slider {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 
-/* EACH VIDEO */
+/* VIDEO STYLE */
 .bg-video {
   position: absolute;
   width: 100%;
@@ -52,22 +58,43 @@
   opacity: 1;
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
 .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.6);
-  z-index: 2;
+  z-index: 1;
 }
 
-/* CONTENT */
+/* HERO CONTENT */
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   text-align: center;
   max-width: 800px;
+  padding: 20px;
 }
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero-content button {
+  padding: 12px 20px;
+  background: #00c3ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 /* SERVICES */
 .services {
   padding: 60px 20px;
@@ -122,8 +149,7 @@
 
 .about-hero .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.6);
 }
 
@@ -133,19 +159,14 @@
   text-align: center;
 }
 
-.about-details {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about-services {
+.about-details,
+.about-services,
+.about-cta {
   padding: 60px 20px;
   text-align: center;
 }
 
 .about-cta {
-  padding: 60px 20px;
-  text-align: center;
   background: #111;
   color: white;
 }
@@ -157,6 +178,7 @@
   color: white;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 /* FOOTER */
