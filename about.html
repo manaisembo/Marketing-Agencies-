@@ -3,64 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Manaisembou</title>
+  <title>Manaisembou | Digital Marketing Expert</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HERO -->
-<section class="about-hero">
+<header class="hero">
   <div class="overlay"></div>
 
-  <div class="about-content">
-    <h1>About Me</h1>
-    <p>Freelancer in Digital Marketing & B2B Email Marketing Expert</p>
+  <div class="hero-text">
+    <h1>Manaisembou</h1>
+    <p>Freelance Digital Marketing Expert | B2B Lead Generation Specialist</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hire Me
+    </button>
   </div>
-</section>
 
-<!-- IMAGE SECTION -->
-<section class="about-image">
-<img src="https://raw.githubusercontent.com/manaisembo/Marketing-Agencies-/main/manaisembou.png" alt="My Photo">
-</section>
+  <img class="hero-img" src="https://raw.githubusercontent.com/manaisembo/Marketing-Agencies-/main/manaisembou.png" alt="Profile">
+</header>
 
-<!-- DETAILS -->
-<section class="about-details">
-  <h2>Who I Am</h2>
-
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
   <p>
-
-    My name is <b>Manaisembou</b>. I am a freelance digital marketing specialist
-    with strong expertise in B2B email marketing and global lead generation.
-  </p>
-
-  <p>
-    I have <b>3 years of experience</b> in B2B email marketing, helping businesses
-    connect with verified decision makers worldwide.
+    I am <b>Manaisembou</b>, a professional digital marketing freelancer with 3+ years experience in B2B email marketing, global lead generation, and business growth strategy.
   </p>
 </section>
 
-<!-- SKILLS -->
-<section class="about-services">
+<!-- SERVICES -->
+<section class="section dark">
   <h2>My Expertise</h2>
 
-  <div class="service-grid">
-    <div class="card">B2B Email Marketing Expert</div>
+  <div class="grid">
+    <div class="card">B2B Email Marketing</div>
     <div class="card">Global Lead Generation</div>
-    <div class="card">Digital Marketing Strategy</div>
-    <div class="card">Business Growth Consultant</div>
+    <div class="card">Digital Strategy</div>
+    <div class="card">Business Growth Consulting</div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="about-cta">
+<section class="section" id="contact">
   <h2>Contact Me</h2>
 
-  <p><b>Phone:</b> 8787683007</p>
-  <p><b>Email:</b> manaisembo@gmail.com</p>
+  <div class="contact-box">
+    <p>📞 8787683007</p>
+    <p>📧 manaisembo@gmail.com</p>
 
-  <button onclick="window.location.href='index.html#contact'">
-    Hire Me / Contact
-  </button>
+    <button>Send Message</button>
+  </div>
 </section>
 
 </body>
