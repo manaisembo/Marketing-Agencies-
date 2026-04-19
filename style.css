@@ -12,8 +12,6 @@
   padding: 15px 30px;
   background: #111;
   color: white;
-  position: relative;
-  z-index: 10;
 }
 
 .navbar nav a {
@@ -22,7 +20,7 @@
   text-decoration: none;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   height: 100vh;
   position: relative;
@@ -31,11 +29,10 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background: black; /* fallback if video fails */
 }
 
-/* VIDEO WRAPPER */
-.video-slider {
+/* IMAGE SLIDER */
+.image-slider {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -43,8 +40,7 @@
   z-index: 0;
 }
 
-/* VIDEO STYLE */
-.bg-video {
+.slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -53,12 +49,11 @@
   transition: opacity 1.2s ease-in-out;
 }
 
-/* ACTIVE VIDEO */
-.bg-video.active {
+.slide.active {
   opacity: 1;
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
@@ -66,7 +61,7 @@
   z-index: 1;
 }
 
-/* HERO CONTENT */
+/* HERO TEXT */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -83,7 +78,6 @@
 .hero-content p {
   font-size: 18px;
   margin-bottom: 20px;
-  line-height: 1.5;
 }
 
 .hero-content button {
@@ -101,7 +95,7 @@
   text-align: center;
 }
 
-.grid, .service-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -132,53 +126,6 @@
 .contact textarea {
   margin: 10px 0;
   padding: 10px;
-}
-
-/* ABOUT PAGE */
-.about-hero {
-  height: 70vh;
-  background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d")
-  no-repeat center center/cover;
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.about-hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
-
-.about-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.about-details,
-.about-services,
-.about-cta {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about-cta {
-  background: #111;
-  color: white;
-}
-
-.about-cta button {
-  padding: 12px 20px;
-  background: #00c3ff;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
 }
 
 /* FOOTER */
