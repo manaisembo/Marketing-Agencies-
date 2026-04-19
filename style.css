@@ -366,9 +366,9 @@ button:hover {
 .hero-img {
   position: relative;
   z-index: 2;
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
+  width: 350px;
+  height: 350px;   /* make it square */
+  border-radius: 0; /* no circle, no rounding */
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
