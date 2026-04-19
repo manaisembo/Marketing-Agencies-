@@ -366,8 +366,10 @@ button:hover {
 .hero-img {
   position: relative;
   z-index: 2;
-  width: 350px;
-  border-radius: 20px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
