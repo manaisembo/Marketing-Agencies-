@@ -1,23 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const videos = document.querySelectorAll(".bg-video");
+  const slides = document.querySelectorAll(".slide");
   let current = 0;
 
-  // Safety check (VERY IMPORTANT)
-  if (videos.length === 0) return;
+  function changeSlide() {
+    slides[current].classList.remove("active");
 
-  // Ensure only first video is active at start
-  videos.forEach((video, index) => {
-    video.classList.remove("active");
-    if (index === 0) video.classList.add("active");
-  });
+    current = (current + 1) % slides.length;
 
-  function changeVideo() {
-    videos[current].classList.remove("active");
-
-    current = (current + 1) % videos.length;
-
-    videos[current].classList.add("active");
+    slides[current].classList.add("active");
   }
 
-  setInterval(changeVideo, 5000);
+  setInterval(changeSlide, 4000);
 });
