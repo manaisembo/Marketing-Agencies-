@@ -135,91 +135,65 @@ footer {
   text-align: center;
   padding: 20px;
 }
- /* =========================
-   ABOUT HERO SECTION
+/* =========================
+   ABOUT HERO (FIXED SEPARATE)
 ========================= */
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: #0f172a;
-  color: white;
-  line-height: 1.6;
-}
-
-/* HERO SECTION */
-.hero {
+.about-hero {
   position: relative;
   height: 100vh;
   background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
-/* DARK OVERLAY */
-.overlay {
+.about-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
 }
 
-/* HERO TEXT */
-.hero-text {
+.about-text {
   position: relative;
   text-align: center;
   z-index: 2;
   max-width: 600px;
 }
 
-.hero-text h1 {
+.about-text h1 {
   font-size: 50px;
-  margin-bottom: 10px;
 }
 
-.hero-text p {
-  font-size: 18px;
+.about-text p {
   color: #cbd5e1;
+  margin-top: 10px;
 }
 
-.hero-text button {
+.about-text button {
   margin-top: 20px;
   padding: 12px 25px;
-  border: none;
   background: #38bdf8;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
+  border: none;
   border-radius: 8px;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
-.hero-text button:hover {
-  background: #0ea5e9;
-  transform: scale(1.05);
-}
-
-/* PROFILE IMAGE (SMALL CORNER IMAGE) */
+/* PROFILE IMAGE FIX */
 .hero-img {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 3px solid white;
   z-index: 3;
 }
 
-/* SECTION COMMON */
+/* =========================
+   ABOUT SECTION
+========================= */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -237,32 +211,9 @@ body {
   color: #cbd5e1;
 }
 
-/* DARK SECTION */
+/* SERVICES GRID (ABOUT USES SAME BUT SAFE NOW) */
 .dark {
   background: #111827;
-}
-
-/* GRID CARDS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-  padding: 0 20px;
-}
-
-.card {
-  background: #1f2937;
-  padding: 25px;
-  border-radius: 12px;
-  transition: 0.3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  background: #38bdf8;
-  color: black;
 }
 
 /* CONTACT BOX */
@@ -272,37 +223,20 @@ body {
   display: inline-block;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-.contact-box p {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-.contact-box button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
-  background: #38bdf8;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.contact-box button:hover {
-  background: #0ea5e9;
-}
-
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
-  .hero-text h1 {
+  .hero-content h1,
+  .about-text h1 {
     font-size: 32px;
   }
 
   .hero-img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     bottom: 10px;
     right: 10px;
   }
