@@ -76,44 +76,29 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-  
 <!-- CONTACT -->
-<form id="contactForm">
-  <input type="hidden" name="access_key" value="2aa3f5ac-360d-46b9-b610-d49acb59e872">
+<section id="contact" class="contact">
+  <h2>Get Leads Now</h2>
 
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Requirement" required></textarea>
+  <form action="https://api.web3forms.com/submit" method="POST">
 
-  <button type="submit">Send Request</button>
-</form>
+    <!-- Web3Forms Key -->
+    <input type="hidden" name="access_key" value="2aa3f5ac-360d-46b9-b610-d49acb59e872">
 
-<p id="successMsg"></p>
+    <!-- Optional subject -->
+    <input type="hidden" name="subject" value="New Lead from Website">
 
-<script>
-const form = document.getElementById('contactForm');
-const msg = document.getElementById('successMsg');
+    <!-- INPUTS -->
+    <input type="text" name="name" placeholder="Your Name" required>
 
-form.addEventListener('submit', async function(e) {
-  e.preventDefault();
+    <input type="email" name="email" placeholder="Your Email" required>
 
-  const data = new FormData(form);
+    <textarea name="message" rows="5" placeholder="Your Requirement" required></textarea>
 
-  const response = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    body: data
-  });
+    <button type="submit">Send Request</button>
 
-  const result = await response.json();
-
-  if (result.success) {
-    msg.innerText = "✅ Message sent successfully!";
-    form.reset();
-  } else {
-    msg.innerText = "❌ Something went wrong!";
-  }
-});
-</script>
+  </form>
+</section>
 <!-- FOOTER -->
 <footer>
   <p>© 2026 LeadGen Agency</p>
