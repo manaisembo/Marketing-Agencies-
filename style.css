@@ -109,17 +109,69 @@
   border-radius: 10px;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact {
   padding: 80px 20px;
-  background: #0f172a; /* dark background */
+  background: #0f172a;
   color: white;
   text-align: center;
 }
 
+/* HEADING */
 .contact h2 {
   font-size: 32px;
   margin-bottom: 30px;
+}
+
+/* FORM BOX */
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* 🔥 vertical layout */
+  gap: 15px;
+  background: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* INPUTS */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #1e293b;
+  color: white;
+}
+
+/* PLACEHOLDER */
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.contact button {
+  padding: 14px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.contact button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
 }
 /* FOOTER */
 footer {
