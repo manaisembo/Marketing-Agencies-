@@ -458,3 +458,18 @@ button:hover {
   display: inline-block;
   border-radius: 10px;
 }
+/* HERO BUTTON */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #e65c00;
+}
