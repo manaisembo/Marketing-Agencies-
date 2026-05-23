@@ -473,3 +473,6 @@ button:hover {
 .hero-btn:hover {
   background: #e65c00;
 }
+html {
+  scroll-behavior: smooth;
+}
