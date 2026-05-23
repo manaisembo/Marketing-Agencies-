@@ -1,109 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeadGen Agency</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <h2>LeadGen</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-  </nav>
-</header>
+  <!-- NAVBAR -->
+  <header class="navbar">
 
-<!-- HERO SECTION -->
-<section class="hero">
+    <h2>LeadGen</h2>
 
-  <!-- IMAGE SLIDER -->
-  <div class="image-slider">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </nav>
 
-    <img class="slide active"
-      src="https://images.unsplash.com/photo-1557804506-669a67965ba0" />
+  </header>
 
-    <img class="slide"
-      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-    <img class="slide"
-      src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
+    <!-- IMAGE SLIDER -->
+    <div class="image-slider">
 
-    <img class="slide"
-      src="https://images.unsplash.com/photo-1553877522-43269d4ea984" />
+      <img class="slide active"
+        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80">
 
-  </div>
+      <img class="slide"
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80">
 
-  <!-- OVERLAY -->
-  <div class="overlay"></div>
+      <img class="slide"
+        src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1400&q=80">
 
-  <!-- HERO CONTENT -->
-  <div class="hero-content">
-    <h1>Global B2B Lead Generation That Drives Revenue</h1>
-    <p>
-      We provide verified global CEO, founder, and decision-maker contacts to help
-      your business scale faster.
-    </p>
+      <img class="slide"
+        src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80">
 
-    <button onclick="scrollToContact()">Get Global Leads</button>
-  </div>
+    </div>
 
-</section>
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
-<!-- SERVICES -->
-<section class="services">
-  <h2>Our Services</h2>
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
 
-  <div class="grid">
-    <div class="card">Global B2B Leads</div>
-    <div class="card">Email Marketing</div>
-    <div class="card">SEO Growth</div>
-  </div>
-</section>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/69e525fd0f64f71c36921ef7/1jmjhoq27';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Get Leads Now</h2>
+      <h1>
+        Global B2B Lead Generation That Drives Revenue
+      </h1>
 
-  <form action="https://api.web3forms.com/submit" method="POST">
+      <p>
+        We provide verified global CEO, founder, and decision-maker contacts
+        to help your business scale faster.
+      </p>
 
-    <!-- Web3Forms Key -->
-    <input type="hidden" name="access_key" value="2aa3f5ac-360d-46b9-b610-d49acb59e872">
+      <button onclick="scrollToContact()">
+        Get Global Leads
+      </button>
 
-    <!-- Optional subject -->
-    <input type="hidden" name="subject" value="New Lead from Website">
+    </div>
 
-    <!-- INPUTS -->
-    <input type="text" name="name" placeholder="Your Name" required>
+  </section>
 
-    <input type="email" name="email" placeholder="Your Email" required>
+  <!-- SERVICES -->
+  <section class="services">
 
-    <textarea name="message" rows="5" placeholder="Your Requirement" required></textarea>
+    <h2>Our Services</h2>
 
-    <button type="submit">Send Request</button>
+    <div class="grid">
 
-  </form>
-</section>
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 LeadGen Agency</p>
-</footer>
+      <div class="card" onclick="scrollToContact()">
+        Global B2B Leads
+      </div>
 
-<script src="script.js"></script>
+      <div class="card" onclick="scrollToContact()">
+        Email Marketing
+      </div>
+
+      <div class="card" onclick="scrollToContact()">
+        SEO Growth
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+
+    <h2>Get Leads Now</h2>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- WEB3FORMS KEY -->
+      <input
+        type="hidden"
+        name="access_key"
+        value="2aa3f5ac-360d-46b9-b610-d49acb59e872"
+      >
+
+      <!-- SUBJECT -->
+      <input
+        type="hidden"
+        name="subject"
+        value="New Lead from Website"
+      >
+
+      <!-- NAME -->
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+      >
+
+      <!-- EMAIL -->
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      >
+
+      <!-- MESSAGE -->
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Your Requirement"
+        required
+      ></textarea>
+
+      <button type="submit">
+        Send Request
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 LeadGen Agency</p>
+  </footer>
+
+  <!-- TAWK CHAT -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+
+    (function(){
+
+    var s1=document.createElement("script"),
+    s0=document.getElementsByTagName("script")[0];
+
+    s1.async=true;
+
+    s1.src='https://embed.tawk.to/69e525fd0f64f71c36921ef7/1jmjhoq27';
+
+    s1.charset='UTF-8';
+
+    s1.setAttribute('crossorigin','*');
+
+    s0.parentNode.insertBefore(s1,s0);
+
+    })();
+    
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
 </body>
 </html>
